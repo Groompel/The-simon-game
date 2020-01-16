@@ -3,7 +3,7 @@ var isGameOver = true;
 var tiles = [];
 var currentTile = 0;
 
-writeMaxLevel(localStorage.getItem("max-level"))
+writeMaxLevel(localStorage.getItem("max-level"));
 
 $(document).click(function(e) {
     var isBtn = false;
