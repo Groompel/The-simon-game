@@ -3,9 +3,11 @@ var isGameOver = true;
 var tiles = [];
 var currentTile = 0;
 
+writeMaxLevel(localStorage.getItem("max-level"))
+
 $(document).click(function(e) {
     var isBtn = false;
-    if(e.target.id !== "")
+    if(e.target.id !== "" && e.target.id !== undefined && $("#" + e.target.id).attr("class") !== undefined)
         isBtn = $("#" + e.target.id).attr("class").includes("btn");
 
     if(isGameOver && !isBtn) {

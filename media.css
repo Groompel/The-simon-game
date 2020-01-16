@@ -1,0 +1,6 @@
+@media only screen and (max-width: 800px) { 
+    .btn {
+        height: 250px;
+        width: 250px;
+    }
+  }
